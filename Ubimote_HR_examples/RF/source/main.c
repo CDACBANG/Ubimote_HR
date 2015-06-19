@@ -73,6 +73,8 @@ static void appTimerIsr(void);
 int main(void)
 {
 
+#error "Hi, Currently not working, still to be tested! - I didn't find time to debug it! "
+
 	//halIntOn();
 	unsigned long pktsSent = 0;
 	perConfig.mode = PER_MODE_TX;
