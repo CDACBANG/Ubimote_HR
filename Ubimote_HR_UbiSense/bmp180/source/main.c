@@ -40,6 +40,10 @@ struct bmp180_t bmp180_l;
 int
 main(void)
 {
+
+#error "Hi! Currently not working, still to be tested! - I didn't find time to debug it! "
+
+
 		char comres = 0;
 		short temperature = 0;
 	    long pressure = 0;
