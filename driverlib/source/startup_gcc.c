@@ -42,7 +42,7 @@
 #define BOOTLOADER_BACKDOOR_DISABLE     0xEFFFFFFF
 #define SYS_CTRL_EMUOVR                 0x400D20B4
 #define SYS_CTRL_I_MAP                  0x400D2098
-
+#define BOOTLOADER_BACKDOOR_ENABLE	0xF3FFFFFF
 
 //*****************************************************************************
 //
@@ -89,7 +89,7 @@ lockPageCCA_t;
 __attribute__ ((section(".flashcca"), used))
 const lockPageCCA_t __cca =
 {
-  BOOTLOADER_BACKDOOR_DISABLE,  // Bootloader backdoor disabled
+  BOOTLOADER_BACKDOOR_ENABLE,
   0,               				// Image valid bytes
   FLASH_START_ADDR 				// Vector table located at flash start address
 };
